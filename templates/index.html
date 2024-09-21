@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to the Book of Answers</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background: url('/static/images/welcome.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 2.5em; /* Larger size for main text */
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .hint {
+            font-size: 0.8em; /* Smaller size for hint */
+        }
+    </style>
+</head>
+<body onclick="location.href='/answer_page';">
+    <div class="overlay">
+        <p>Too hard to decide? Welcome to the Answer of the Universe!</p>
+        <p></p> <!-- Empty paragraph for spacing -->
+        <p class="hint">Click to get a hint from the Universe.</p> <!-- Smaller size for hint -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Your Answer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            background: url('/static/images/answer.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        h1 {
+            font-size: 1.5em; /* Smaller size for headers */
+            margin: 10px; /* Margin for spacing */
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin: 20px;
+        }
+        /* .answer-container {
+            position: relative; /* Ensure it stacks properly */
+            width: 500px; /* Width of the container */
+        } */
+        #answer {
+            font-size: 3em; /* Bigger size */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                         0 0 20px rgba(255, 255, 255, 0.6), 
+                         0 0 30px rgba(255, 255, 255, 0.4); /* Bling overlay effect */
+            position: relative; /* Ensure text is above background */
+        }
+        #finalMessage {
+            font-size: 2em; /* Message size */
+            margin-top: 40px; /* Increased margin for spacing */
+            padding: 0 20px; /* Padding for decent left and right margin */
+            text-align: center; /* Center the text */
+        }
+        #finalMessage span {
+            font-size: 1.5em; /* Bigger size for "Be decisive!" */
+            display: block; /* Move "Be decisive!" to a new line */
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus on your question...</h1>
+    <h1>Whenever you are ready, click the button</h1>
+    <button id="answerButton" onclick="getRandomAnswer()">Get hint from the Universe</button>
+    <div class="answer-container">
+        <p id="answer"></p>
+    </div>
+    <p id="finalMessage"></p>
+
+    <script>
+        let clickCount = 0; // To count the number of clicks
+
+        function getRandomAnswer() {
+            if (clickCount >= 2) {
+                document.getElementById('finalMessage').innerHTML = "OMG if you don't believe the Universe that much, just do whatever you want.<span>Be decisive!</span>"; // Use innerHTML to include span
+                document.getElementById('answerButton').disabled = true; // Disable the button
+                return; // Prevent further execution
+            }
+
+            fetch('/random_answer')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('answer').innerText = data.answer || data.error;
+                    clickCount++; // Increment click count
+                })
+                .catch(error => {
+                    document.getElementById('answer').innerText = 'Error: ' + error.message;
+                });
+        }
+    </script>
+</body>
+</html>
