@@ -63,4 +63,4 @@ That said, I intentionally kept this project simple — something completely con
 ---
 
 ## **Contributing**
-Contributions are welcome! Feel free to fork the repo, submit pull requests, or open issues for suggestions, bug reports, or connect with me via [LinkedIn](https://www.linkedin.com/in/trang-nguyen-45374b102/)
+Contributions are welcome! Feel free to fork the repo, submit pull requests, or open issues for suggestions, bug reports, or connect with me via [LinkedIn](https://www.linkedin.com/in/trang-nguyen-45374b102/).
