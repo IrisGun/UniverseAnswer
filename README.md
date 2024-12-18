@@ -52,9 +52,8 @@ As a mere *human-being*, **Answer of the Universe** is my solution — a lightwe
 
 ---
 
-### **Suggestions for Improvement **  
-You can always customize and enrich the responses to match your preferences by simply adding new answers to the data.  
-In this public version, I’ve used a spreadsheet for convenience and ease of use. However, you can enhance the app by:  
+## **Suggestions for Improvement**  
+You can always customize and enrich the responses to match your preferences by simply adding new answers to the data. In this public version, I’ve used a spreadsheet for convenience and ease of use. However, you can enhance the app by:  
 - Adding more categories to the questions.  
 - Creating a structured database for answers by topic to organize them more effectively.
 - Adjusting the tone to match sentiment preferences.  
@@ -64,4 +63,4 @@ That said, I intentionally kept this project simple — something completely con
 ---
 
 ## **Contributing**
-Contributions are welcome! Feel free to fork the repo, submit pull requests, or open issues for suggestions or bug reports.
+Contributions are welcome! Feel free to fork the repo, submit pull requests, or open issues for suggestions, bug reports, or connect with me via [LinkedIn](https://www.linkedin.com/in/trang-nguyen-45374b102/)
