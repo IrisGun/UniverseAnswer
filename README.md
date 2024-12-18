@@ -36,7 +36,7 @@ As someone passionate about **data science** and **technology**, I wanted to cre
 ## **How to Use Locally**
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/<your-username>/Answer-of-the-Universe.git
+   git clone https://github.com/IrisGun/UniverseAnswer.git
 2. Navigate to the project directory:
    ```bash
    cd UniverseAnswer
